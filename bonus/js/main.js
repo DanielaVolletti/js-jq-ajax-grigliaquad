@@ -32,10 +32,11 @@ $(document).ready(function(){
             alert("Hai già cliccato!");
           } else if (numRandom <= 5){
             singoloQuadratino.addClass("giallo active");
+            singoloQuadratino.text(numRandom);
           } else {
             singoloQuadratino.addClass("verde active");
+            singoloQuadratino.text(numRandom);
           }
-          singoloQuadratino.text(numRandom);
         },
         error : function (richiesta,stato,errori) {
           console.log("E' avvenuto un errore. " + errori, "stato " + stato, richiesta);
